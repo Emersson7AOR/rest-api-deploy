@@ -1,0 +1,16 @@
+{
+  "versión": 2,
+  "construye": [
+    {
+      "src": "app.js",
+      "uso": "@vercel/nodo",
+      "config": { "includeFiles": ["dist/**"] }
+    }
+  ],
+  "rutas": [
+    {
+      "src": "/(.*)",
+      "dest": "app.js"
+    }
+  ]
+}
