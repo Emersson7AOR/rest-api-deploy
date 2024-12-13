@@ -1,13 +1,13 @@
 {
-  "versión": 2,
-  "construye": [
+  "version": 2,
+  "builds": [
     {
       "src": "app.js",
-      "uso": "@vercel/nodo",
+      "use": "@vercel/node",
       "config": { "includeFiles": ["dist/**"] }
     }
   ],
-  "rutas": [
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "app.js"
